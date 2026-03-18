@@ -37,20 +37,20 @@ public class Student extends Person { //ke thua tu thang cha Person
     //ghi de Getinfor cua thang cha Person
     @Override
     public String getInfo() {
-        return super.getInfo() + ", Lop: " + className + ", Diem: " + String.format("%.1f", score);
+        return super.getInfo() + ", Lớp: " + className + ", Điểm: " + String.format("%.1f", score);
     }
 
     // --- PHAN LOAI HOC LUC ---
     // Dung if-else phan loai theo thang diem 10
     public String getClassification() {
         if (score >= 8.5) {
-            return "Gioi";
+            return "Giỏi";
         } else if (score >= 7.0) {
-            return "Kha";
+            return "Khá";
         } else if (score >= 5.0) {
-            return "Trung binh";
+            return "Trung bình";
         } else {
-            return "Yeu";
+            return "Yếu";
         }
     }
 }
